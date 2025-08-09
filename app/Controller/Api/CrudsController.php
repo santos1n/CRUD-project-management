@@ -17,23 +17,6 @@ class CrudsController extends AppController
 
   public function index()
   {
-    // //without pagination
-    // $datas = $this->Crud->find('all', array());
-
-    // //transform data
-    // $cruds = array();
-    // foreach ($datas as $data) {
-    //   $cruds = array(
-    //     'id'            => $data['Crud']['id'],
-    //     'name'          => properCase($data['Crud']['name']),
-    //     'age'           => $data['Crud']['age'],
-    //     'character'     => $data['Crud']['character'],
-    //     'visible'       => $data['Crud']['visible'],
-    //     'date_created'  => date('m/d/Y', strtotime($data['Crud']['created']))
-    //   );
-    // }
-
-    //with pagination
     //defaut page 1
     $page = isset($this->request->query['page']) ? $this->request->query['page'] : 1;
 
@@ -82,10 +65,7 @@ class CrudsController extends AppController
     $response = array(
       'ok' => true,
       'msg' => 'Index',
-      // 'untransformed'=>$datas,
-      // 'transformed'=>$cruds
-      // 'untransformed'=> $tmpData,
-      'data' => $cruds_, //transformed data
+      'data' => $cruds_,
       'paginator' => $paginator
     );
 
@@ -188,21 +168,6 @@ class CrudsController extends AppController
         'Crud.visible' => true,
       )
     ));
-
-    // unset($data['User']['password']);
-    // $data['Beneficiary'] = Set::extract('{}.Beneficiary',$this->Beneficiary->find('all',array(
-    //   'conditions' => array(
-    //     'Beneficiary.visible' => true,
-    //     'Beneficiary.crud_id' => $id
-    //   ),
-    //   'order' => array(
-    //     'UserPermission.id' => 'ASC' 
-    //   )
-
-    // )));
-    // //or
-    // // $data_ = $this->Crud->findById($id);
-    // $data['Beneficiary'] = is_null($data['Beneficiary']) ? array() : $data['Beneficiary'];
 
     $response = array(
       'ok'    => true,
