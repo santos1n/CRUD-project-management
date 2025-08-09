@@ -3,7 +3,7 @@
 	<div class="col-md-3">
 		<div class="header-sub-wrapper">
 			<a href="#/dashboard" class="logo-link">
-				<div id="logo">EDNC</div>
+				<div id="logo">CRUD</div>
 				<div id="title">_</div>	
 			</a>
 		</div>

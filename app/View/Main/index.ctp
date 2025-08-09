@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>E D & C SOLUTIONS</title>
+	<title>CRUD Project Management</title>
 	<link rel="stylesheet" href="<?php echo $this->base ?>/assets/plugins/bootstrap-3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo $this->base ?>/assets/plugins/scrollbar/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="<?php echo $this->base ?>/assets/plugins/angular-loading/loading-bar.css">
