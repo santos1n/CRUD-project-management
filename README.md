@@ -1,5 +1,5 @@
 
-# Project Management System
+# Client Management System
 
 A simple CRUD system to track your on-going projects. Built using CakePHP and AngularJS. 
 
